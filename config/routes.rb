@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  ActiveAdmin.routes(self)
   root 'home#index'
   resources :staff
   resources :sessions, only: [:new, :create, :destroy]
